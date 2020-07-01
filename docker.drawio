@@ -1,0 +1,119 @@
+<mxfile host="" modified="2020-07-01T08:58:42.703Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.1 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="CBE-atU781vV05ycj3CC" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="1199" dy="1012" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="605" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="ApiServer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="379" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;comic=0;" edge="1" parent="1" source="12" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;comic=0;" edge="1" parent="1" source="12" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="web应用" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;comic=0;" vertex="1" parent="1">
+                    <mxGeometry x="215" y="234" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;comic=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;fontSize=18;" edge="1" parent="1" source="65" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="286" y="663"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="node.js" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;comic=0;" vertex="1" parent="1">
+                    <mxGeometry x="335" y="374" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="33" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="26" y="715" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="151" y="767"/>
+                            <mxPoint x="466" y="767"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Nginx" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;comic=0;" vertex="1" parent="1">
+                    <mxGeometry x="88" y="374" width="127" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Electron应用" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="234" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="57" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="741" y="663"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="打包生成APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="374" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Docker" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=10;glass=0;comic=0;shadow=0;fillColor=#1ba1e2;strokeColor=none;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="379" y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="物理主机" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="414" y="520" width="112" height="208" as="geometry"/>
+                </mxCell>
+                <UserObject label="端口映射" placeholders="1" name="Variable" id="33">
+                    <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=0;glass=0;comic=0;fontSize=18;" vertex="1" parent="1">
+                        <mxGeometry x="111.5" y="584" width="80" height="40" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="14" target="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="466.0588235294117" y="728" as="targetPoint"/>
+                        <mxPoint x="151.47058823529437" y="434" as="sourcePoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="数据连通输出app" placeholders="1" name="Variable" id="57">
+                    <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=0;glass=0;comic=0;fontSize=18;" vertex="1" parent="1">
+                        <mxGeometry x="637" y="510" width="183" height="36" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="18" target="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="665" y="404" as="sourcePoint"/>
+                        <mxPoint x="526" y="663.0588235294117" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="741" y="404"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="端口映射" placeholders="1" name="Variable" id="65">
+                    <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;rounded=1;shadow=0;glass=0;comic=0;fontSize=18;" vertex="1" parent="1">
+                        <mxGeometry x="246" y="510" width="80" height="36" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;comic=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;fontSize=18;" edge="1" parent="1" source="16" target="65">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="334.9999999999998" y="404" as="sourcePoint"/>
+                        <mxPoint x="414" y="663.0588235294117" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="286" y="404"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

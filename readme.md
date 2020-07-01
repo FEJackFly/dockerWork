@@ -2,6 +2,8 @@
 
 # 前言
 
+每次换电脑安装各种开发包，electron 打包，网络原因各种下载不到依赖，应用部署困难？那就看看这篇攻略，打造一劳永逸的随身开发环境吧
+
 ## Docker 安装
 
 - 官网注册账号
@@ -14,7 +16,7 @@
 
 - `docekr pull [images] #拉取镜像`
 - `docekr imgaes #查看所有镜像`
-- `docker rmi [imagesID] #删除指定镜像`
+- `docker rmi [imageID] #删除指定镜像`
 - `docker rmi -f \$(docker images -aq) #！小技巧删除所有镜像`
 
 ### container
@@ -144,6 +146,8 @@ dockerfile 实例
 
 ![](https://user-gold-cdn.xitu.io/2020/7/1/17309129caea338e?w=1394&h=2140&f=png&s=340488)
 
+dockerfile 在 github 上需要的自己拿呀：https://github.com/JackFlyL/dockerWork.git
+
 ### 生成镜像
 
 ```
@@ -172,3 +176,28 @@ docker exec -it mywork /bin/zsh
 连接成功！这就是你的专属服务器，想怎么造怎么造，比 docker 数据卷共享更自由。
 
 ![](https://user-gold-cdn.xitu.io/2020/7/1/17309316c91164cc?w=3318&h=1782&f=png&s=491876)
+
+## 关于应用部署
+
+### web 网页
+
+- Nginx 代理，映射端口到主机，通过主机 IP：映射端口访问
+- node.js 启动 pm2 进程守护 映射端口到主机，通过主机 IP：映射端口访问
+
+### Electron 应用
+
+打包生成 APP 通过数据连通 共享数据到主机 直接使用
+
+```
+docker run -itd -v /home/data:/home/AlectronApps mywork
+```
+
+![](https://user-gold-cdn.xitu.io/2020/7/1/173099b56637fbc0?w=687&h=712&f=png&s=77072)
+
+## 总结
+
+至此一个随身的开发环境就搞定了，即使你到任何系统任何电脑 只要支持 docker 就可以拉取镜像还原自己的工作状态，而且容错率高，重装系统只需要重新 run 一下。你可以把自己的项目放入镜像中，不断完善不断的 commit 更新镜像。
+基础镜像的 dockerfile 放到了 github，需要的同学自己取。镜像我也上传到了阿里云，不想折腾的懒人们也直接用哈！
+
+- github：https://github.com/JackFlyL/dockerWork.git
+- 阿里云镜像包：docker pull registry.cn-hangzhou.aliyuncs.com/jackfly/mywork:1.0
