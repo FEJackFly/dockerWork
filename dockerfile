@@ -55,7 +55,6 @@ RUN chsh -s /bin/zsh
 
 RUN apt-get install -y nginx
 
-
 # ssh
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
@@ -70,6 +69,18 @@ RUN mkdir /root/.ssh
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 22
+#WORKDIR /root
+#RUN echo -e "\n #!/bin/bash \n /etc/init.d/ssh start \n /usr/sbin/service nginx start \n tail -f /dev/null" > start.sh
 
-CMD    ["/usr/sbin/sshd", "-D"]
+#RUN  /etc/init.d/nginx start
+
+COPY ["start.sh", "/root/start.sh"]
+WORKDIR /root
+RUN chmod 755 start.sh
+EXPOSE 22 
+
+CMD    ["./start.sh"]
+#CMD ["/bin/bash", "-c", "service sshd start", "service nginx start"]
+#CMD    ["/usr/sbin/sshd", "-D"]
+
+#ENTRYPOINT ["/start.sh"]
